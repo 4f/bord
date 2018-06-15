@@ -1,0 +1,81 @@
+.bord2 {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.bord {
+    padding: 0 16px;
+}
+.w400 {
+    flex: 0 0 400px;
+    border: 1px outset #eee;
+    margin: 8px;
+    padding: 8px;
+}
+.w400:hover {
+    background: #f5f5f5;
+}
+.row.no-wrap {
+    flex-wrap: nowrap;
+}
+.card.margin8 {
+    margin: 8px;
+    /* user-select: none; */
+}
+.card.margin8:hover {
+    background: #f1f1f1;
+}
+.dragPlacehoder {
+    position: absolute;
+    z-index: 222;
+    background: transparent;
+    /* opacity: 0.4; */
+    border: 1px dotted gray;
+}
+.dragover {
+    background: #eee;
+}
+.card .card-close {
+    position: absolute;
+    right: 4px;
+    display: none;
+}
+.card .card-edit {
+    position: absolute;
+    right: 4px;
+    bottom: 4px;
+    display: none;
+}
+.card:hover .card-hover {
+    display: block;
+}
+.col .col-close {
+    position: absolute;
+    right: 4px;
+    display: none;
+}
+
+.col .col-command {
+    position: absolute;
+    left: 4px;
+    display: none;
+}
+.col-command button {
+    display: inline-block;
+}
+
+.col:hover .col-hover {
+    display: block;
+}
+
+.bg-modal-show {
+    display: block;
+}
+.bg-modal-hide {
+    display: none;
+}
+.bg-modal-show .modal{
+    display: block;
+    background: gray;
+}
